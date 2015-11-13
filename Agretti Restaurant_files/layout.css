@@ -1,8 +1,4 @@
 /** ********************************************** **
-	@Author			Dorin Grigoras
-	@Website		www.stepofweb.com
-	@Last Update	10:47 AM Monday, February 17, 2014
-
 	TABLE CONTENTS
 	-------------------------------
 		01. Resets
@@ -910,8 +906,12 @@ header .navbar.bottom {
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
-		background-size: cover;
-		background-position:center center;
+
+		
+		/*
+			background-position:center center;
+		*/
+
 		background-repeat:no-repeat;
 		height:100%;
 		overflow:hidden;
