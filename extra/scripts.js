@@ -1,6 +1,4 @@
 /** ********************************************** **
-	@Author			Dorin Grigoras
-	@Website		www.stepofweb.com
 	@Last Update	10:36 AM Monday, February 17, 2014
 
 	TABLE CONTENTS
@@ -18,26 +16,12 @@
 *************************************************** **/
 
 
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	ga('create', 'UA-34016412-8', 'auto');
-	ga('send', 'pageview');
-
-
-	// GOOGLE MAP
-	var	$googlemap_latitude 	= -37.812344,
-		$googlemap_longitude	= 144.968900,
-		$googlemap_zoom			= 13,
-
-		// @CONTACT FORM - TRANSLATE OR EDIT
-		errMsg 						= 'Please complete all fields!',
-		errEmail					= 'Invalid Email!',
-		okSent						= '<strong>Thank You!</strong> Your message successfully sent!',
-		contact_buttonDisabled		= 'MESSAGE SENT',
-		reservation_buttonDisabled	= 'RESERVATION SENT';
+// @CONTACT FORM - TRANSLATE OR EDIT
+errMsg 						= 'Please complete all fields!',
+errEmail					= 'Invalid Email!',
+okSent						= '<strong>Thank You!</strong> Your message successfully sent!',
+contact_buttonDisabled		= 'MESSAGE SENT',
+reservation_buttonDisabled	= 'RESERVATION SENT';
 
 
 
@@ -115,7 +99,7 @@
 
 				// keep footer at bottom
 				if(jQuery("#middle").height() < jQuery(window).height()) {
-					jQuery("#middle").css({"min-height":(jQuery(window).height() - 270) + "px"});
+					jQuery("#middle").css({"min-height":(jQuery(window).height() - 500) + "px"});
 				}
 
 			},

@@ -27,7 +27,8 @@
   <!-- mobile settings -->
   <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
   <!-- WEB FONTS -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Dosis:300,400" rel="stylesheet" type="text/css">  <!-- CORE CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Dosis:300,400" rel="stylesheet" type="text/css">
+  <!-- CORE CSS -->
   <link href="./extra/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="./extra/owl.carousel.css" rel="stylesheet" type="text/css">
@@ -41,9 +42,9 @@
   <script type="text/javascript" src="./extra/jquery-2.0.3.min.js"></script>
   <style type="text/css">
     #fullwidthmap {
-        	width: 100% !important;
-            height: 250px;
-        	}
+            	width: 100% !important;
+                height: 300px;
+            	}
   </style>
   <header id="header">
     <nav class="navbar navbar-inverse" role="navigation">
@@ -87,31 +88,31 @@
   <!-- MIDDLE -->
   <section id="fullwidthmap"></section>
   <!-- content -->
-  <section id="middle" class="container" style="min-height: 565px;">
+  <section id="middle" class="container" style="height: 400px;">
     <header>
       <h1 class="text-center">Inscriviti alla nostra
         <strong>
           <em>Newsletter!</em>
         </strong>
       </h1>
-      <p class="lead2 text-center">Riceverai ogni mese aggiornamenti sulle novitá del nostro negozio.</p>
+      <p class="lead2 text-center">Riceverai ogni mese aggiornamenti sulle novità del nostro negozio.</p>
     </header>
     <div class="row">
       <div class="col-md-12">
         <script type="text/javascript">
           var map;
-                    						function initMap() {
-                    
-                    						  map = new google.maps.Map(document.getElementById('fullwidthmap'), {
-                    						    center: {lat: 45.547974, lng: 9.077840},
-                    						    zoom: 15
-                    						  });
-                    
-                    						  var marker = new google.maps.Marker({
-                    							  position: {lat: 45.547974, lng: 9.077840},
-                    							  map: map,
-                      						  });
-                    						}
+                                						function initMap() {
+                                
+                                						  map = new google.maps.Map(document.getElementById('fullwidthmap'), {
+                                						    center: {lat: 45.547974, lng: 9.077840},
+                                						    zoom: 15
+                                						  });
+                                
+                                						  var marker = new google.maps.Marker({
+                                							  position: {lat: 45.547974, lng: 9.077840},
+                                							  map: map,
+                                  						  });
+                                						}
         </script>
         <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjrgSzzV9Hqgay_DYhUyIdqoBjI9qFQUE&amp;callback=initMap">
 </script>
@@ -134,38 +135,72 @@
     <div class="divider">
       <!-- lines divider -->
     </div>
-    <div class="row">
-      <!-- ADDRESS COLUMN -->
-      <div class="col-md-8">
-        <h3>Dove siamo</h3>
-        <!-- ADDRESS -->
-        <address>
-          <ul class="list-unstyled fsize15">
-            <li class="address-sprite address">Image
-              <br>VIA S.ANNA 8 Arese, Milano
-              <br>20017 Italia
-              <br>
-            </li>
-            <li class="address-sprite phone">Telefono: 02-9382322</li>
-            <li class="address-sprite email">info@image.com</li>
-          </ul>
-        </address>
-        <!-- /ADDRESS -->
+    <div class="container">
+      <div class="row">
+        <!-- ADDRESS COLUMN -->
+        <div class="col-md-4">
+          <h3>Contattaci</h3>
+          <!-- CONTACT FORM -->
+          <form id="contactForm" method="post" action="php/contact.php" class="block form-inline">
+            <div class="row">
+              <div class="col-md-12">
+                <input required="" class="form-control fullwidth" type="text" name="contact_name" id="contact_name" value="" placeholder="NOME *" title="Name">
+              </div>
+              <div class="col-md-12">
+                <input required="" class="form-control fullwidth" type="email" name="contact_email" id="contact_email" value="" placeholder="EMAIL *" title="Email">
+              </div>
+              <div class="col-md-12">
+                <input class="form-control fullwidth" type="text" name="contact_subject" id="contact_subject" value="" placeholder="SOGGETTO *" title="Subject">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <textarea required="" class="form-control fullwidth" rows="5" name="contact_comment" id="contact_comment" placeholder="MESSAGGIO *"></textarea>
+              </div>
+              <div class="col-md-12">
+                <div id="_sent_ok_" class="alert alert-success fsize14 hide">
+                  <i class="fa fa-check"></i>
+                  <strong>Thank You!</strong>Your message successfully sent!</div>
+                <input type="hidden" name="captcha" id="captcha" value="">
+                <!-- hidden field - humans should not see it, only spam bots will see
+                it -->
+                <button id="contact_submit" class="btn btn-primary">INVIA MESSAGGIO</button>
+              </div>
+            </div>
+          </form>
+          <!-- /CONTACT FORM -->
+        </div>
+        <div class="col-md-4">
+          <h3>Dove siamo</h3>
+          <!-- ADDRESS -->
+          <address>
+            <ul class="list-unstyled fsize15">
+              <li class="address-sprite address">Image
+                <br>VIA S.ANNA 8 Arese, Milano
+                <br>20017 Italia
+                <br>
+              </li>
+              <li class="address-sprite phone">Telefono: 02-9382322</li>
+              <li class="address-sprite email">info@image.com</li>
+            </ul>
+          </address>
+          <!-- /ADDRESS -->
+        </div>
+        <!-- /ADDRESS COLUMN -->
+        <!-- INFO COLUMN -->
+        <div class="col-md-4">
+          <h3>Info</h3>
+          <!-- INFO -->
+          <p>Lorem ipsum dolor sit amet meatball shank pork chop capicola fatback pork
+            loin sirloin flank.</p>
+          <p>Bacon ipsum dolor sit amet meatball shank pork chop capicola fatback pork
+            loin sirloin flank. Andouille tongue corned beef rump pork loin shank meatball
+            capicola turducken venison shankle kevin pancetta tri-tip boudin.</p>
+          <!--
+          /INFO -->
+        </div>
+        <!-- /INFO COLUMN -->
       </div>
-      <!-- /ADDRESS COLUMN -->
-      <!-- INFO COLUMN -->
-      <div class="col-md-4">
-        <h3>Info</h3>
-        <!-- INFO -->
-        <p>Lorem ipsum dolor sit amet meatball shank pork chop capicola fatback pork
-          loin sirloin flank.</p>
-        <p>Bacon ipsum dolor sit amet meatball shank pork chop capicola fatback pork
-          loin sirloin flank. Andouille tongue corned beef rump pork loin shank meatball
-          capicola turducken venison shankle kevin pancetta tri-tip boudin.</p>
-        <!--
-        /INFO -->
-      </div>
-      <!-- /INFO COLUMN -->
     </div>
   </section>
   <!-- /MIDDLE -->
@@ -175,11 +210,11 @@
     <a href="#toTop" class="fa fa-arrow-up toTop"></a>
     <div class="container">
       <div class="row">
-        <div class="col-md-6 copyright">Your Company, LTD
-          <br>2014 © All Rights Reserved.</div>
+        <div class="col-md-6 copyright">Image
+          <br>2015 All Rights Reserved.</div>
         <div class="col-md-6 text-right">
-          <a href="#" class="social fa fa-facebook"></a>
-          <a href="#" class="social fa fa-twitter"></a>
+          <a href="" class="social fa fa-facebook"></a>
+          <a href="" class="social fa fa-twitter"></a>
         </div>
       </div>
     </div>
