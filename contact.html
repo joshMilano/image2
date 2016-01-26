@@ -42,9 +42,9 @@
   <script type="text/javascript" src="./extra/jquery-2.0.3.min.js"></script>
   <style type="text/css">
     #fullwidthmap {
-            	width: 100% !important;
-                height: 300px;
-            	}
+                	width: 100% !important;
+                    height: 300px;
+                	}
   </style>
   <header id="header">
     <nav class="navbar navbar-inverse" role="navigation">
@@ -66,6 +66,9 @@
             </li>
             <li>
               <a href="chisiamo.html">CHI SIAMO</a>
+            </li>
+            <li>
+              <a href="servizi.html">SERVIZI</a>
             </li>
             <li>
               <a href="trattamenti.html">TRATTAMENTI</a>
@@ -101,19 +104,19 @@
       <div class="col-md-12">
         <script type="text/javascript">
           var map;
-                                						function initMap() {
-                                
-                                						  map = new google.maps.Map(document.getElementById('fullwidthmap'), {
-                                						    center: {lat: 45.547974, lng: 9.077840},
-                                						    zoom: 15,
-                                                scrollwheel : false
-                                 						  });
-                                
-                                						  var marker = new google.maps.Marker({
-                                							  position: {lat: 45.547974, lng: 9.077840},
-                                							  map: map,
-                                  						  });
-                                						}
+                                            						function initMap() {
+                                            
+                                            						  map = new google.maps.Map(document.getElementById('fullwidthmap'), {
+                                            						    center: {lat: 45.547974, lng: 9.077840},
+                                            						    zoom: 15,
+                                                            scrollwheel : false
+                                             						  });
+                                            
+                                            						  var marker = new google.maps.Marker({
+                                            							  position: {lat: 45.547974, lng: 9.077840},
+                                            							  map: map,
+                                              						  });
+                                            						}
         </script>
         <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjrgSzzV9Hqgay_DYhUyIdqoBjI9qFQUE&amp;callback=initMap">
 </script>
