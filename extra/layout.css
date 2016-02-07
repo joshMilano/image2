@@ -1403,7 +1403,10 @@ a, a:hover, a:active, a:focus {
 }
 
 
+.navbar-collapse {
+	z-index: 999999;
+}
+
 #header{
 	z-index:2000000;
-	position: fixed;
 }
