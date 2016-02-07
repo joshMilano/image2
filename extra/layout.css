@@ -1403,8 +1403,6 @@ a, a:hover, a:active, a:focus {
 }
 
 
-header .nav.navbar-nav {
+.navbar-collapse {
 	z-index: 999999;
-	background-color: yellow;
-	position: absolute;
 }
