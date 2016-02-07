@@ -1404,6 +1404,7 @@ a, a:hover, a:active, a:focus {
 
 
 header .nav.navbar-nav {
-	z-index: 11111;
+	z-index: 999999;
 	background-color: red;
+	position: absolute;
 }
