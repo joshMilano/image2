@@ -1407,6 +1407,6 @@ a, a:hover, a:active, a:focus {
 	z-index: 999999;
 }
 
-header{
+#header{
 	z-index: 999999;
 }
