@@ -1400,13 +1400,16 @@ a, a:hover, a:active, a:focus {
 		font-size: 35px;
 		line-height: 35px;
 	}
+
+
+	#header{
+		position: absolute;
+		width: 359px;
+		z-index:2000000;
+	}
 }
 
 
 .navbar-collapse {
 	z-index: 999999;
-}
-
-#header{
-	z-index:2000000;
 }
