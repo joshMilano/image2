@@ -834,8 +834,6 @@ header .navbar.bottom {
 	}
 
 	.navbar-collapse .navbar-nav{
-		background-color: red;
-		
 		z-index: 1000;
 	}
 
@@ -1402,4 +1400,9 @@ a, a:hover, a:active, a:focus {
 		font-size: 35px;
 		line-height: 35px;
 	}
+}
+
+
+header .nav.navbar-nav {
+	z-index: 11111;
 }
