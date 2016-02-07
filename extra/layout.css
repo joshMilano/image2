@@ -801,6 +801,9 @@ header .navbar.bottom {
 		position:relative;
 		z-index:999;
 	}
+
+
+
 	header .navbar-inverse .navbar-collapse, 
 	header .navbar-inverse .navbar-form {
 		border-color:#fff;
@@ -827,10 +830,14 @@ header .navbar.bottom {
 		margin-top:3px;
 		color:#000;
 		display:none;
+		z-index: 1000;
 	}
 
-
-
+	.navbar-collapse .navbar-nav{
+		background-color: red;
+		
+		z-index: 1000;
+	}
 
 
 
