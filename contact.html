@@ -79,6 +79,8 @@
   <!-- Morenizr -->
   <script type="text/javascript" src="./extra/modernizr.min.js"></script>
   <script type="text/javascript" src="./extra/jquery-2.0.3.min.js"></script>
+
+  <script type="text/javascript" src="http://malsup.github.io/min/jquery.form.min.js"></script>
   <style type="text/css">
     #fullwidthmap {
       width: 100% !important;
@@ -184,21 +186,21 @@
       <div class="col-md-4">
         <h3>Contattaci</h3>
         <!-- CONTACT FORM -->
-        <form id="contactForm" method="post" action="php/contact.php" class="block form-inline">
+        <form id="myForm"  method="post" action="php/contact.php" class="block form-inline">
           <div class="row">
             <div class="col-md-12">
-              <input required="" class="form-control fullwidth" type="text" name="contact_name" id="contact_name" value="" placeholder="NOME *" title="Name">
+              <input required="" class="form-control fullwidth" type="text" name="name" id="contact_name" value="" placeholder="NOME *" title="Name">
             </div>
             <div class="col-md-12">
-              <input required="" class="form-control fullwidth" type="email" name="contact_email" id="contact_email" value="" placeholder="EMAIL *" title="Email">
+              <input required="" class="form-control fullwidth" type="email" name="email" id="contact_email" value="" placeholder="EMAIL *" title="Email">
             </div>
             <div class="col-md-12">
-              <input class="form-control fullwidth" type="text" name="contact_subject" id="contact_subject" value="" placeholder="SOGGETTO *" title="Subject">
+              <input class="form-control fullwidth" type="text" name="subject" id="contact_subject" value="" placeholder="SOGGETTO *" title="Subject">
             </div>
           </div>
           <div class="row">
             <div class="col-md-12">
-              <textarea required="" class="form-control fullwidth" rows="5" name="contact_comment" id="contact_comment" placeholder="MESSAGGIO *"></textarea>
+              <textarea required="" class="form-control fullwidth" rows="5" name="message" id="contact_comment" placeholder="MESSAGGIO *"></textarea>
             </div>
             <div class="col-md-12">
               <div id="_sent_ok_" class="alert alert-success fsize14 hide">
@@ -273,6 +275,16 @@ Sabato 9.00-14.00
   <script type="text/javascript" src="./extra/jquery.maximage.min.js"></script>
   <script type="text/javascript" src="./extra/scripts.js"></script>
 
+<script>
+
+ $(document).ready(function() { 
+            // bind 'myForm' and provide a simple callback function 
+            $('#myForm').ajaxForm(function() { 
+                alert("Grazie per averci contattato!"); 
+            }); 
+        }); 
+
+</script>
 
 
 
