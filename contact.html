@@ -203,13 +203,15 @@
               <textarea required="" class="form-control fullwidth" rows="5" name="message" id="contact_comment" placeholder="MESSAGGIO *"></textarea>
             </div>
             <div class="col-md-12">
-              <div id="_sent_ok_" class="alert alert-success fsize14 hide">
+              <div id="_sent_ok_" class="alert alert-success fsize14 hisde">
                 <i class="fa fa-check"></i>
                 <strong>Thank You!</strong>Your message successfully sent!</div>
               <input type="hidden" name="captcha" id="captcha" value="">
               <!-- hidden field - humans should not see it, only spam bots will see
                             it -->
-              <button id="contact_submit" class="btn btn-primary">INVIA MESSAGGIO</button>
+              <button id="contact_submit" type="submit" class="btn btn-primary">INVIA MESSAGGIO</button>
+
+
             </div>
           </div>
         </form>
