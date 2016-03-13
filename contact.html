@@ -21,6 +21,11 @@
   <script async="" src="./extra/analytics.js"></script>
   <script type="text/javascript">
     window["_gaUserPrefs"] = { ioo : function() { return true; } }
+
+     var show = function(){
+              $('#_sent_ok_').show();
+            }
+            
   </script>
   <!--<![endif]-->
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -286,9 +291,7 @@ Sabato 9.00-14.00
             // bind 'myForm' and provide a simple callback function 
 
 
-            var show = function(){
-              $('#_sent_ok_').show();
-            }
+           
             $('#myForm').ajaxForm();
 
         }); 
