@@ -212,7 +212,7 @@
               <!-- <button id="contact_submit" type="submit" class="btn btn-primary">INVIA MESSAGGIO</button> -->
 
 
-    <input type="submit" value="Submit Comment" /> 
+    <input type="submit" onclick="show()" value="INVIA MESSAGGIO" /> 
 
 
             </div>
@@ -285,15 +285,11 @@ Sabato 9.00-14.00
  $(document).ready(function() { 
             // bind 'myForm' and provide a simple callback function 
 
-            var options = { 
-                beforeSubmit:    function() { 
-                  alert("dsds");
-                    $('#_sent_ok_').show();
-                } 
-            }; 
 
-
-            $('#myForm').ajaxForm(options);
+            var onclick = function(){
+              $('#_sent_ok_').show();
+            }
+            $('#myForm').ajaxForm();
 
         }); 
 
